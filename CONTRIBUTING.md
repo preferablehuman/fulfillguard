@@ -12,21 +12,45 @@ FulfillGuard is developed through sprint-scoped branches, pull requests, and exp
 
 ## 2. Branch naming
 
-Use short-lived branches:
+Use short-lived branches with this required format:
 
-- `feature/fg-###-short-description`
-- `fix/fg-###-short-description`
-- `docs/short-description`
-- `chore/short-description`
-- `spike/short-description`
+```text
+<type>/spr-<sprint-number>-<short-description>
+```
+
+Approved branch types:
+
+- `feature` — product or engineering capability
+- `fix` — defect correction
+- `docs` — documentation-only change
+- `chore` — build, tooling, dependency, or repository maintenance
+- `refactor` — internal restructuring without intended behaviour change
+- `spike` — time-boxed investigation or experiment
+- `hotfix` — urgent correction to a broken accepted build
 
 Examples:
 
 ```text
-feature/fg-001-project-bootstrap
-feature/fg-003-postgres-liquibase
-fix/fg-002-module-cycle
+feature/spr-0-project-bootstrap
+feature/spr-0-postgres-liquibase
+fix/spr-2-negative-inventory
+chore/spr-0-maven-quality-gates
+docs/spr-0-branch-policy
+spike/spr-3-kafka-partitioning
+refactor/spr-6-extract-inventory-service
 ```
+
+Branch-name rules:
+
+- Use the sprint in which the work is planned, not the sprint when it is eventually merged.
+- Use lowercase kebab-case for the description.
+- Keep the description concise but specific.
+- Do not use personal names, dates, or vague names such as `changes`, `work`, or `test`.
+- Create the branch from the latest accepted `main` unless a documented dependency requires another base.
+- One branch should normally contain one independently reviewable change.
+- Delete the branch after merge.
+
+The branch name does not contain the GitHub issue ID. Therefore, traceability to the relevant `FG-###` issue is mandatory in the pull-request title or body. When a branch legitimately addresses multiple issues, list each issue and explain why the changes are inseparable.
 
 ## 3. Commit messages
 
@@ -46,7 +70,8 @@ Keep commits coherent. Do not mix unrelated formatting, refactoring, and feature
 
 A pull request must describe:
 
-- Related issue or story
+- Related `FG-###` issue or story
+- Sprint number
 - Purpose and scope
 - Design decisions
 - Acceptance criteria satisfied
