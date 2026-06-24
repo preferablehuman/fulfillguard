@@ -12,6 +12,7 @@ This directory contains the authoritative product, engineering, architecture, an
 ### Team and delivery
 
 - [`team/operating-model.md`](team/operating-model.md) — roles, responsibilities, sprint process, review process, and decision ownership.
+- [`team/branching-strategy.md`](team/branching-strategy.md) — branch naming, lifecycle, traceability, and merge rules.
 - [`engineering/standards.md`](engineering/standards.md) — baseline development, testing, security, documentation, and quality requirements.
 
 ### Architecture
