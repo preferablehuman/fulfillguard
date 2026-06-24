@@ -1,10 +1,10 @@
-package com.practise.java.fulfillguard;
+package io.github.preferablehuman.fulfillguard;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class FulfillguardApplicationTests {
+class FulfillGuardApplicationTests {
 
 	@Test
 	void contextLoads() {

@@ -1,4 +1,4 @@
-package com.practise.java.fulfillguard;
+package io.github.preferablehuman.fulfillguard;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
