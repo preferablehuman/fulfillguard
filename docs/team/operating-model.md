@@ -94,21 +94,37 @@ Compilation alone is not completion.
 
 ### Protected branch intent
 
-`main` represents accepted work. Development must normally occur on short-lived branches.
+`main` represents accepted work. Development must normally occur on short-lived branches created from the latest accepted `main`.
 
-Recommended branch naming:
+### Required branch naming
 
-- `feature/fg-###-short-description`
-- `fix/fg-###-short-description`
-- `docs/short-description`
-- `chore/short-description`
-- `spike/short-description`
+Use:
+
+```text
+<type>/spr-<sprint-number>-<short-description>
+```
+
+Examples:
+
+```text
+feature/spr-0-project-bootstrap
+feature/spr-0-postgres-liquibase
+fix/spr-2-negative-inventory
+docs/spr-0-branch-policy
+chore/spr-0-maven-quality-gates
+spike/spr-3-kafka-partitioning
+```
+
+Approved types are `feature`, `fix`, `docs`, `chore`, `refactor`, `spike`, and `hotfix`.
+
+A branch should normally contain one independently reviewable change. Sprint membership in the branch name does not replace issue traceability. Every pull request must link the relevant `FG-###` issue or issues.
 
 ### Pull-request expectations
 
 Every product change should include:
 
 - Linked issue or story ID
+- Sprint number
 - Purpose and scope
 - Design summary
 - Test evidence
@@ -118,6 +134,13 @@ Every product change should include:
 - Checklist confirming no secrets were committed
 
 Large, mixed-purpose pull requests may be rejected and split.
+
+### Merge approach
+
+- Normal work is squash-merged into `main` after acceptance.
+- The source branch is deleted after merge.
+- Long-lived `develop` or sprint branches are not used.
+- Sprint boundaries are represented by issues, documents, and release tags rather than integration branches.
 
 ## 7. Review outcomes
 
