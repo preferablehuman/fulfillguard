@@ -21,10 +21,9 @@ This directory contains the authoritative product, engineering, architecture, an
 
 ### Sprints
 
-- [`sprints/sprint-00.md`](sprints/sprint-00.md) — engineering-foundation sprint specification.
+- [`sprints/sprint-00.md`](sprints/sprint-00.md) — original engineering-foundation specification.
+- [`sprints/sprint-01.md`](sprints/sprint-01.md) — current architecture and persistence foundation plan.
 
 ## Authority and change control
 
-These documents define the accepted project baseline. Material changes must be proposed through a branch and pull request. Architectural changes that alter constraints, module boundaries, persistence, messaging, deployment, security, or interoperability require an Architecture Decision Record.
-
-GitHub issues represent actionable backlog items. Documents define the governing requirements; issues must not silently override them.
+These documents define the accepted project baseline. Material changes must be proposed through a branch and pull request.
