@@ -8,7 +8,7 @@
 		<version>3.5.15</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.practise.java</groupId>
+	<groupId>io.github.preferablehuman</groupId>
 	<artifactId>fulfillguard</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>

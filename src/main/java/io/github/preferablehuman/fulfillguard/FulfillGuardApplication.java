@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class FulfillguardApplication {
+public class FulfillGuardApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(FulfillguardApplication.class, args);
+		SpringApplication.run(FulfillGuardApplication.class, args);
 	}
 
 }
