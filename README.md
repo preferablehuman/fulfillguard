@@ -1,25 +1,82 @@
 # FulfillGuard
 
-FulfillGuard is a backend-first, locally operated order, inventory, and fulfilment orchestration platform developed as a production-style Java and Spring Boot learning project.
-
-The project begins as a modular monolith and will evolve through controlled sprints into an event-driven distributed system using open-source technologies such as Apache Kafka, Kafka Streams, PostgreSQL, Debezium, Apicurio Registry, Valkey, Keycloak, OpenTelemetry, Jenkins, and local Kubernetes.
+FulfillGuard is a backend-first, locally operated order, inventory, and fulfilment orchestration platform built with Java and Spring Boot.
 
 ## Current status
 
-- **Phase:** Product initiation and engineering preparation
-- **Current milestone:** Pre-Sprint 0 repository setup
-- **Runtime restriction:** Local execution only
-- **Dependency restriction:** Open-source software only
-- **Primary focus:** Backend engineering and distributed systems
+- Sprint 1 — Architecture and Persistence Foundation
+- FG-001 application bootstrap accepted
+- Java 21 and Spring Boot 3.5.15
+- Executable JAR with embedded Tomcat
+- Health endpoint: `http://localhost:8080/actuator/health`
+- Local execution and open-source runtime dependencies only
 
-Formal product, architecture, engineering, and sprint documents are maintained under [`docs/`](docs/).
+Project documentation is maintained under [`docs/`](docs/).
 
-## Working model
+## Build and test
 
-- **Product owner and team lead:** ChatGPT
-- **Backend engineer and solution architect:** Kunal Maheshwari
-- **Sprint cadence:** One week
-- **Planned capacity:** 8–12 committed hours per sprint
-- **Delivery model:** Branch, pull request, review, and acceptance
+Windows:
 
-No product implementation has started. Sprint 0 begins after the initiation documents and repository conventions are approved.
+```powershell
+.\mvnw.cmd clean verify
+```
+
+Linux or macOS:
+
+```bash
+./mvnw clean verify
+```
+
+## Run locally
+
+Windows:
+
+```powershell
+.\mvnw.cmd spring-boot:run
+```
+
+Linux or macOS:
+
+```bash
+./mvnw spring-boot:run
+```
+
+## Health check
+
+```bash
+curl http://localhost:8080/actuator/health
+```
+
+Expected response:
+
+```json
+{"status":"UP"}
+```
+
+## Sprint 1 focus
+
+Committed:
+
+- Repository-name correction
+- Bootstrap cleanup
+- Verification workflow hardening
+- Modular-monolith boundaries
+- PostgreSQL and Liquibase
+
+Stretch:
+
+- PostgreSQL integration tests with Testcontainers
+
+See [`docs/sprints/sprint-01.md`](docs/sprints/sprint-01.md) for the detailed plan.
+
+## Current limitations
+
+- No business endpoints
+- No accepted database configuration yet
+- No accepted module boundaries yet
+- No automated CI pipeline yet
+- Security, messaging, observability, and orchestration are deferred
+
+## Delivery model
+
+Work is delivered through issues, short-lived branches, pull requests, review, and explicit acceptance. See [`CONTRIBUTING.md`](CONTRIBUTING.md) for repository rules.
