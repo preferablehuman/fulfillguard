@@ -1,29 +1,37 @@
 # FulfillGuard Documentation
 
-This directory contains the authoritative product, engineering, architecture, and sprint documentation for FulfillGuard.
+This directory contains the authoritative product, engineering, architecture, sprint, and delivery documentation for FulfillGuard.
 
-## Document map
+## Product
 
-### Product
+- [`product/project-charter.md`](product/project-charter.md) — product vision, scope, constraints, and success criteria.
+- [`product/deliverables.md`](product/deliverables.md) — canonical deliverables, stable identifiers, status, and acceptance policy.
+- [`product/roadmap.md`](product/roadmap.md) — approximate delivery sequence.
 
-- [`product/project-charter.md`](product/project-charter.md) — product vision, scope, constraints, users, capabilities, and success criteria.
-- [`product/roadmap.md`](product/roadmap.md) — planned evolution from modular monolith to an observable event-driven system.
+## Team and delivery
 
-### Team and delivery
+- [`team/operating-model.md`](team/operating-model.md) — roles, readiness, completion, review, and merge rules.
+- [`team/delivery-traceability.md`](team/delivery-traceability.md) — deliverable-to-sprint-to-story-to-PR-to-evidence process.
+- [`team/branching-strategy.md`](team/branching-strategy.md) — branch naming and lifecycle.
+- [`engineering/standards.md`](engineering/standards.md) — engineering requirements.
 
-- [`team/operating-model.md`](team/operating-model.md) — roles, responsibilities, sprint process, review process, and decision ownership.
-- [`team/branching-strategy.md`](team/branching-strategy.md) — branch naming, lifecycle, traceability, and merge rules.
-- [`engineering/standards.md`](engineering/standards.md) — baseline development, testing, security, documentation, and quality requirements.
+## Architecture
 
-### Architecture
+- [`architecture/decision-process.md`](architecture/decision-process.md) — Architecture Decision Record process.
 
-- [`architecture/decision-process.md`](architecture/decision-process.md) — Architecture Decision Record process and decision criteria.
+## Sprints
 
-### Sprints
+- [`sprints/sprint-template.md`](sprints/sprint-template.md) — required sprint structure and traceability tables.
+- [`sprints/sprint-00.md`](sprints/sprint-00.md) — completed Sprint 0 record.
+- [`sprints/sprint-01.md`](sprints/sprint-01.md) — active Sprint 1 requirements and acceptance tracking.
 
-- [`sprints/sprint-00.md`](sprints/sprint-00.md) — original engineering-foundation specification.
-- [`sprints/sprint-01.md`](sprints/sprint-01.md) — current architecture and persistence foundation plan.
+## Source-of-truth order
 
-## Authority and change control
+1. Project charter for scope and constraints
+2. Deliverables catalogue for outcomes and status
+3. Roadmap for approximate sequencing
+4. Sprint document for current commitment and exact requirements
+5. Issues for work execution
+6. Pull requests, code, tests, reports, and ADRs for evidence
 
-These documents define the accepted project baseline. Material changes must be proposed through a branch and pull request.
+Material changes require a branch and pull request. Issues cannot silently override governing documents.
