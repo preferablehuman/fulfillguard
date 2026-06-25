@@ -1,0 +1,161 @@
+--- Combined verification log ---
+Generated: 26-06-2026  1:05:16.61
+Exit code: 23
+
+===== Build and orchestration output =====
+--- Verification started at 26-06-2026  1:03:35.73 ---
+[26-06-2026  1:03:35.74] Checking prerequisites...
+[26-06-2026  1:03:37.44] Running Maven clean verify...
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------< io.github.preferablehuman:fulfillguard >---------------
+[INFO] Building  0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.4.1:clean (default-clean) @ fulfillguard ---
+[INFO] Deleting D:\Development\fullfillguard\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ fulfillguard ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ fulfillguard ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 1 source file with javac [debug parameters release 21] to target\classes
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ fulfillguard ---
+[INFO] skip non existing resourceDirectory D:\Development\fullfillguard\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.14.1:testCompile (default-testCompile) @ fulfillguard ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 1 source file with javac [debug parameters release 21] to target\test-classes
+[INFO] 
+[INFO] --- surefire:3.5.6:test (default-test) @ fulfillguard ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running io.github.preferablehuman.fulfillguard.FulfillGuardApplicationTests
+01:03:41.035 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [io.github.preferablehuman.fulfillguard.FulfillGuardApplicationTests]: FulfillGuardApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+01:03:41.098 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration io.github.preferablehuman.fulfillguard.FulfillGuardApplication for test class io.github.preferablehuman.fulfillguard.FulfillGuardApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::               (v3.5.15)
+
+2026-06-26T01:03:41.340+05:30  INFO 32412 --- [fulfillguard] [           main] i.g.p.f.FulfillGuardApplicationTests     : Starting FulfillGuardApplicationTests using Java 21.0.10 with PID 32412 (started by kunal in D:\Development\fullfillguard)
+2026-06-26T01:03:41.341+05:30  INFO 32412 --- [fulfillguard] [           main] i.g.p.f.FulfillGuardApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2026-06-26T01:03:42.370+05:30  INFO 32412 --- [fulfillguard] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-06-26T01:03:42.428+05:30  INFO 32412 --- [fulfillguard] [           main] i.g.p.f.FulfillGuardApplicationTests     : Started FulfillGuardApplicationTests in 1.244 seconds (process running for 1.842)
+Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
+WARNING: A Java agent has been loaded dynamically (C:\Users\kunal\.m2\repository\net\bytebuddy\byte-buddy-agent\1.17.8\byte-buddy-agent-1.17.8.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+Java HotSpot(TM) 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.044 s -- in io.github.preferablehuman.fulfillguard.FulfillGuardApplicationTests
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- jar:3.4.2:jar (default-jar) @ fulfillguard ---
+[INFO] Building jar: D:\Development\fullfillguard\target\fulfillguard-0.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- spring-boot:3.5.15:repackage (repackage) @ fulfillguard ---
+[INFO] Replacing main artifact D:\Development\fullfillguard\target\fulfillguard-0.0.1-SNAPSHOT.jar with repackaged archive, adding nested dependencies in BOOT-INF/.
+[INFO] The original artifact has been renamed to D:\Development\fullfillguard\target\fulfillguard-0.0.1-SNAPSHOT.jar.original
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  4.753 s
+[INFO] Finished at: 2026-06-26T01:03:43+05:30
+[INFO] ------------------------------------------------------------------------
+[26-06-2026  1:03:43.75] Maven verification completed successfully.
+[26-06-2026  1:03:43.76] Starting Spring Boot application...
+[26-06-2026  1:03:44.18] Spring Boot launcher PID: 15832
+[26-06-2026  1:05:14.66] ERROR: Health endpoint did not report UP within 90 seconds.
+Last health-check response:
+At line:1 char:94
++ ... {$r=Invoke-RestMethod -Uri $env:HEALTH_URL -TimeoutSec 5;$r ^| Conver ...
++                                                                 ~
+Unexpected token '^' in expression or statement.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : UnexpectedToken
+ 
+[26-06-2026  1:05:14.70] Stopping the Spring Boot process tree for launcher PID 15832...
+ERROR: The process with PID 36752 (child process of PID 25092) could not be terminated.
+Reason: This process can only be terminated forcefully (with /F option).
+ERROR: The process with PID 33980 (child process of PID 15832) could not be terminated.
+Reason: This process can only be terminated forcefully (with /F option).
+ERROR: The process with PID 25092 (child process of PID 15832) could not be terminated.
+Reason: One or more child processes of this process were still running.
+ERROR: The process with PID 15832 (child process of PID 31976) could not be terminated.
+Reason: One or more child processes of this process were still running.
+[26-06-2026  1:05:16.40] Launcher process did not stop cleanly; forcing termination.
+SUCCESS: The process with PID 36752 (child process of PID 25092) has been terminated.
+SUCCESS: The process with PID 33980 (child process of PID 15832) has been terminated.
+SUCCESS: The process with PID 25092 (child process of PID 15832) has been terminated.
+SUCCESS: The process with PID 15832 (child process of PID 31976) has been terminated.
+[26-06-2026  1:05:16.59] Verification failed with exit code 23.
+[26-06-2026  1:05:16.60] Merging logs into D:\Development\fullfillguard\logs\build_20260626_010335.log
+
+===== Spring Boot output =====
+--- Spring Boot output started at 26-06-2026  1:03:35.73 ---
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------< io.github.preferablehuman:fulfillguard >---------------
+[INFO] Building  0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.5.15:run (default-cli) > test-compile @ fulfillguard >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ fulfillguard ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ fulfillguard ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ fulfillguard ---
+[INFO] skip non existing resourceDirectory D:\Development\fullfillguard\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.14.1:testCompile (default-testCompile) @ fulfillguard ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] <<< spring-boot:3.5.15:run (default-cli) < test-compile @ fulfillguard <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.5.15:run (default-cli) @ fulfillguard ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::               (v3.5.15)
+
+2026-06-26T01:03:47.199+05:30  INFO 36752 --- [fulfillguard] [           main] i.g.p.f.FulfillGuardApplication          : Starting FulfillGuardApplication using Java 21.0.10 with PID 36752 (D:\Development\fullfillguard\target\classes started by kunal in D:\Development\fullfillguard)
+2026-06-26T01:03:47.201+05:30  INFO 36752 --- [fulfillguard] [           main] i.g.p.f.FulfillGuardApplication          : No active profile set, falling back to 1 default profile: "default"
+2026-06-26T01:03:47.810+05:30  INFO 36752 --- [fulfillguard] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-06-26T01:03:47.821+05:30  INFO 36752 --- [fulfillguard] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-26T01:03:47.821+05:30  INFO 36752 --- [fulfillguard] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-06-26T01:03:47.857+05:30  INFO 36752 --- [fulfillguard] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-06-26T01:03:47.858+05:30  INFO 36752 --- [fulfillguard] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 627 ms
+2026-06-26T01:03:48.254+05:30  INFO 36752 --- [fulfillguard] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-06-26T01:03:48.309+05:30  INFO 36752 --- [fulfillguard] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-06-26T01:03:48.318+05:30  INFO 36752 --- [fulfillguard] [           main] i.g.p.f.FulfillGuardApplication          : Started FulfillGuardApplication in 1.509 seconds (process running for 1.724)
+
+--- End of combined verification log ---
